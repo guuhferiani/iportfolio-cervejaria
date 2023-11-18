@@ -233,8 +233,54 @@ h1, h2, h3, h3, h4, h5, h6 {
     border-bottom: 3px solid #149ddd;
 }
 
-
-
+@media (min-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    #hero h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+}
+/* ========= Seção Geral  =====*/
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+.section-bg{
+    background: #f5f8f5;
+}
+.section-title {
+    padding-bottom: 30px;
+}
+.section-title h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+}
+.section-title h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #149ddd;
+    bottom: 0;
+    left: 0;
+}
+.section-title p{
+    margin-bottom: 0;
+}
 
 
 
