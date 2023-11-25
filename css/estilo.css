@@ -427,3 +427,39 @@ section {
     background: #cec4c3;
     border: 2px solid #173b6c;
 }
+/*  portfolio  */
+.portfolio .portfolio-item{
+    margin-bottom: 30px;
+}
+.portfolio #portfolio-filters {
+    padding: 0;
+    margin: 0 auto 35px auto;
+    list-style: none;
+    text-align: center;
+    background: #c7c9c7;
+    border-radius: 50px;
+}
+.portfolio #portfolio-filters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 15px 8px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #050d18;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.portfolio #portfolio-filters li:hover,
+.portfolio #portfolio-filters li.filter-active {
+    color: #149ddd;
+}
+.portfolio #portfolio-wrap {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
