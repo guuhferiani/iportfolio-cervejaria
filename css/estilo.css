@@ -686,11 +686,99 @@ section {
     font-style: italic;
     margin: 0 15px 15px 15px;
     padding: 20px;
-    background: #adaebc;
+    background: #b4b6c3;
     position: relative;
     margin-bottom: 35px;
     border-radius: 6px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+.testimonials .testimonial-item p::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 20px solid #b4b6c3;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    position: absolute;
+    bottom: -20px;
+    left: calc(50% - 20px);
+}
+.testimonials .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+}
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    opacity: 1;
+    border: 1px solid #149ddd;
+}
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+    background: #149ddd;
+}
+/* Contatos  */
+.contact {
+    padding-bottom: 130px;
+}
+.contact .info {
+    padding: 30px;
+    background: #fcfcfc;
+    width: 100%;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.12);
+}
+.contact .info i {
+    font-size: 20px;
+    color: #149ddd;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #dff3fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+.contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #050d18;
+}
+.contact .info p {
+    padding: 0 0 10px 60px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #122f57;
+}
+.contact .info .email p {
+    padding-top: 5px;
+}
+.contact .info .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    margin-right: 10px;
+}
+.contact .info .social-links a:hover {
+    background: #149ddd;
+    color: #fff;
+}
+.contact .info .endereco:hover i,
+.contact .info .email:hover i,
+.contact .info .fone:hover i {
+    background: #149ddd;
+    color: #fff;
 }
 
 
@@ -699,11 +787,6 @@ section {
 
 
 
-/* Fim Avaliacoes */ 
-/* Contatos  */
-
-
-/* fim contatos */ 
 
 /* Roda pé  */
 #footer {
