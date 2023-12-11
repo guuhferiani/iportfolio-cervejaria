@@ -141,9 +141,9 @@
   }
 
   /**
-   * Skills animation
+   * estilos animation
    */
-  let skilsContent = select('.skills-content');
+  let skilsContent = select('.estilos-content');
   if (skilsContent) {
     new Waypoint({
       element: skilsContent,
@@ -212,9 +212,9 @@
   });
 
   /**
-   * Testimonials slider
+   * avaliacao slider
    */
-  new Swiper('.testimonials-slider', {
+  new Swiper('.avaliacao-slider', {
     speed: 600,
     loop: true,
     autoplay: {
