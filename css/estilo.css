@@ -717,17 +717,19 @@ section {
 .avaliacao .swiper-pagination .swiper-pagination-bullet-active {
     background: #149ddd;
 }
-/* Contatos  */
-.contato {
+
+
+/*  ===  Contatos === */
+.contact {
     padding-bottom: 130px;
 }
-.contato .info {
+.contact .info {
     padding: 30px;
-    background: #fcfcfc;
     width: 100%;
-    box-shadow: 0 0 24px rgba(0, 0, 0, 0.12);
+    background: #fff;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.12);    
 }
-.contato .info i {
+.contact .info i {
     font-size: 20px;
     color: #149ddd;
     float: left;
@@ -740,99 +742,111 @@ section {
     border-radius: 50px;
     transition: all 0.3s ease-in-out;
 }
-.contato .info h4 {
+.contact .info h4 {
     padding: 0 0 0 60px;
     font-size: 22px;
     font-weight: 600;
-    margin-bottom: 5px;
+    margin-bottom: 0;
     color: #050d18;
 }
-.contato .info p {
+.contact .info p {
     padding: 0 0 10px 60px;
     margin-bottom: 20px;
     font-size: 14px;
-    color: #122f57;
+    color: #122f57;    
 }
-.contato .info .email p {
+.contact .info .email p {
     padding-top: 5px;
 }
-.contato .info .social-links a {
-    font-size: 18px;
-    display: inline-block;
-    background: #333;
-    color: #fff;
-    line-height: 1;
-    padding: 8px 0;
-    border-radius: 50%;
-    text-align: center;
-    width: 36px;
-    height: 36px;
-    transition: 0.3s;
-    margin-right: 10px;
-}
-.contato .info .social-links a:hover {
+
+.contact .info .address:hover i, 
+.contact .info .email:hover i,
+.contact .info .phone:hover i {
     background: #149ddd;
-    color: #fff;
+    color: #c9c9c9;
 }
-.contato .info .endereco:hover i,
-.contato .info .email:hover i,
-.contato .info .fone:hover i {
-    background: #149ddd;
-    color: #fff;
-}
-.contato .php-email-form {
+
+.contact .php-email-form{
     width: 100%;
     padding: 30px;
     background: #fff;
     box-shadow: 0 0 24px rgba(0, 0, 0, 0.12);
-} 
-.contato .php-email-form .form-group {
+}
+.contact .php-email-form .form-group {
     padding-bottom: 8px;
 }
-.contato .php-email-form .validate {
+
+.contact .php-email-form .validate {
     display: none;
-    color: blue;
+    color: #16b10b;
     margin: 0 0 15px 0;
     font-weight: 400;
     font-size: 13px;
 }
-.contato .php-email-form .error-message{  /* erro ao enviar */
+.contact .php-email-form .error-message {
     display: none;
     color: #fff;
-    background: #ed3c0d;
+    background: red;
     text-align: left;
     padding: 15px;
     font-weight: 600;
 }
-.contato .php-email-form .error-message br+br {
-    margin-top: 25px;
-}
-.contato .php-email-form .sent.message {  /*mensagem enviada com Sucesso */
+.contact .php-email-form .sent-message {
     display: none;
     color: #fff;
-    background: #00660e;
+    background: #149ddd;
     text-align: center;
-    font-size: 13px;
     padding: 15px;
+    font-weight: 600;
 }
-.contato .php-email-form .loading {
-    display: none;
-    background: #fff;
-    text-align: center;
-    font-size: 13px;
-}
-.contato .php-email-form .loading:before {
+.contact .php-email-form .loading::before {
     content: "";
     display: inline-block;
     border-radius: 50%;
     width: 24px;
     height: 24px;
     margin: 0 10px -6px 0;
-    border: 3px solid #00b318;
-    border-top-color: #eee;
+    border: 3px solid #18d26e;
+    border-top: #eee;
     animation: animate-loading 1s linear infinite;
 }
-
+.contact .php-email-form .form-group {
+    margin-bottom: 15px;
+}
+.contact .php-email-form label {
+    padding-bottom: 8px;
+}
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+}
+.contact .php-email-form input {
+    height: 44px;
+}
+.contact .php-email-form textarea {
+    padding: 10px 15px;
+}
+.contact .php-email-form button[type=submit] {
+    background: #125738;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+.contact .php-email-form button[type=submit]:hover {
+    background: #25af71;
+}
+@keyframes animate-loading {
+ 0% {
+    transform: rotate(0deg);
+ }   
+  100% {
+      transform: rotate(360deg) ;
+  }
+}
 
 /* Roda pé  */
 #footer {
