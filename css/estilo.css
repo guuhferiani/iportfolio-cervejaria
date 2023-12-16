@@ -780,6 +780,60 @@ section {
     background: #149ddd;
     color: #fff;
 }
+.contato .php-email-form {
+    width: 100%;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.12);
+} 
+.contato .php-email-form .form-group {
+    padding-bottom: 8px;
+}
+.contato .php-email-form .validate {
+    display: none;
+    color: blue;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+    font-size: 13px;
+}
+.contato .php-email-form .error-message{  /* erro ao enviar */
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+}
+.contato .php-email-form .error-message br+br {
+    margin-top: 25px;
+}
+.contato .php-email-form .sent.message {  /*mensagem enviada com Sucesso */
+    display: none;
+    color: #fff;
+    background: #00660e;
+    text-align: center;
+    font-size: 13px;
+    padding: 15px;
+}
+.contato .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    font-size: 13px;
+}
+.contato .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #00b318;
+    border-top-color: #eee;
+    animation: animate-loading 1s linear infinite;
+}
+
+
 /* Roda pé  */
 #footer {
     padding: 15px;
